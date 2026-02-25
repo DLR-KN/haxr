@@ -140,6 +140,23 @@ uv run --group docs make -C docs html
 
 and open `docs/build/html/index.html` in your browser.
 
+## Publishing to PyPI (maintainers)
+
+This project uses [`uv`][uv] to build and publish distributions manually (not part of the CI).
+
+Build the `sdist` and `wheel` into `dist/`:
+
+```bash
+rm -rf dist/
+uv build
+```
+
+and publish the artifacts in `dist/` to [PyPI][pypi]:
+
+```bash
+uv publish
+```
+
 [doc]: https://dlr-kn.github.io/haxr/
 [github]: https://github.com/DLR-KN/haxr
 [pre-commit]: https://pre-commit.com
