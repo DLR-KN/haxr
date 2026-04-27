@@ -17,8 +17,10 @@ class DOI(enum.StrEnum):
 
     Attributes:
         v1: Base URL prefix for dataset release v1.
+        v2: Base URL prefix for dataset release v2.
         latest: Alias for the most recent supported release.
     """
 
     v1 = "https://zenodo.org/records/18759623/files"
-    latest = v1
+    v2 = "https://zenodo.org/records/19824555/files"
+    latest = v2

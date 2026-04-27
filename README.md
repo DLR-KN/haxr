@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18759623.svg)](https://doi.org/10.5281/zenodo.18759623)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19824555.svg)](https://doi.org/10.5281/zenodo.19824555)
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
 [![PyPI](https://img.shields.io/pypi/v/haxr)](https://pypi.org/project/haxr/)
 [![CI](https://img.shields.io/github/actions/workflow/status/DLR-KN/haxr/ci.yml?branch=main)](https://github.com/DLR-KN/haxr/actions/workflows/ci.yml)
@@ -47,7 +47,7 @@ with haxr.Store(base_url=haxr.DOI.latest) as store:
     plot_cycle(store, "amerikahoeft", split_hour_utc=8, cycle=1000)
 ```
 
-<img src="https://zenodo.org/records/18759623/files/demo.png" alt="demo.png" width="500">
+<img src="https://zenodo.org/records/19824555/files/demo.png" alt="demo.png" width="500">
 
 # Contributing 👷
 
@@ -164,4 +164,4 @@ uv publish
 [pypi]: https://pypi.org/project/haxr/
 [sphinx]: https://www.sphinx-doc.org/
 [uv]: https://docs.astral.sh/uv/
-[zenodo]: https://doi.org/10.5281/zenodo.18759623
+[zenodo]: https://doi.org/10.5281/zenodo.19824555

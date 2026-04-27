@@ -1,7 +1,7 @@
 Overview
 ========
 
-``haxr`` is the companion library for the `HAXR <https://doi.org/10.5281/zenodo.18759623>`_ dataset.
+``haxr`` is the companion library for the `HAXR <https://doi.org/10.5281/zenodo.19824555>`_ dataset.
 It provides:
 
 - an easy, local-cache-based access layer for the dataset files (radar + AIS + station
