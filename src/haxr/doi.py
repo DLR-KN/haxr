@@ -12,15 +12,28 @@ class DOI(enum.StrEnum):
     appends file names like ``manifest.json``, ``stations.csv``, and per-chunk files to
     this prefix when downloading.
 
-    Prefer a versioned member (e.g. ``DOI.v1``) for reproducible workflows. Use
+    The version numbers in member names refer to HAXR dataset releases published on
+    Zenodo, not to versions of the ``haxr`` Python package. For example,
+    ``DOI.v1_1_0`` points to the Zenodo file endpoint for dataset release v1.1.0,
+    regardless of the installed package version. When in doubt, trim the ``/files``
+    suffix and print the URL to see the corresponding Zenodo record:
+
+    .. code-block:: python
+
+        from haxr import DOI
+
+        print(str(DOI.v1_1_0).removesuffix("/files"))
+        # https://zenodo.org/records/19824555
+
+    Prefer a versioned member (e.g. ``DOI.v1_1_0``) for reproducible workflows. Use
     ``DOI.latest`` to follow the most recent supported release.
 
     Attributes:
-        v1: Base URL prefix for dataset release v1.
-        v2: Base URL prefix for dataset release v2.
+        v1_0_0: Base URL prefix for dataset release v1.0.0.
+        v1_1_0: Base URL prefix for dataset release v1.1.0.
         latest: Alias for the most recent supported release.
     """
 
-    v1 = "https://zenodo.org/records/18759623/files"
-    v2 = "https://zenodo.org/records/19824555/files"
-    latest = v2
+    v1_0_0 = "https://zenodo.org/records/18759623/files"
+    v1_1_0 = "https://zenodo.org/records/19824555/files"
+    latest = v1_1_0

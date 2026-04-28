@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19824555.svg)](https://doi.org/10.5281/zenodo.19824555)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18759622.svg)](https://doi.org/10.5281/zenodo.18759622)
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
 [![PyPI](https://img.shields.io/pypi/v/haxr)](https://pypi.org/project/haxr/)
 [![CI](https://img.shields.io/github/actions/workflow/status/DLR-KN/haxr/ci.yml?branch=main)](https://github.com/DLR-KN/haxr/actions/workflows/ci.yml)
@@ -164,4 +164,4 @@ uv publish
 [pypi]: https://pypi.org/project/haxr/
 [sphinx]: https://www.sphinx-doc.org/
 [uv]: https://docs.astral.sh/uv/
-[zenodo]: https://doi.org/10.5281/zenodo.19824555
+[zenodo]: https://doi.org/10.5281/zenodo.18759622

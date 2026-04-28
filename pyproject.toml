@@ -4,7 +4,7 @@ build-backend = "uv_build"
 
 [project]
 name = "haxr"
-version = "1.1.0"
+version = "1.2.0"
 description = "Companion library for the HAXR dataset"
 readme = "README.md"
 authors = [

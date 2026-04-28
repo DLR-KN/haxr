@@ -1,7 +1,7 @@
 Overview
 ========
 
-``haxr`` is the companion library for the `HAXR <https://doi.org/10.5281/zenodo.19824555>`_ dataset.
+``haxr`` is the companion library for the `HAXR <https://doi.org/10.5281/zenodo.18759622>`_ dataset.
 It provides:
 
 - an easy, local-cache-based access layer for the dataset files (radar + AIS + station
@@ -36,7 +36,10 @@ and (optionally) downloads missing files from a dataset release endpoint.
     from haxr.utilities import load_cycle, iter_frames
 
     # Pick a release endpoint. For reproducible workflows prefer a versioned DOI.
-    with Store(base_url=DOI.latest) as store:
+    base_url = DOI.latest
+    print("DOI:", base_url.removesuffix("/files"))
+
+    with Store(base_url=base_url) as store:
         # Discover what’s available
         chunks = store.list_chunks(station="altona")
 
